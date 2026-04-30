@@ -1,11 +1,14 @@
 #include <stdio.h>
 
 char *my_strcat(char *dst, const char *src) {
-    char *p = dst;
-    while (*p) p++; 
-    while (*p = *src) { 
-        p++; 
-        src++; 
+    char *ptr = dst;
+    while (*ptr) {
+        ptr++;
+    }
+    while (*src) {
+        *ptr = *src;
+        ptr++;
+        src++;
     }
     return dst;
 }
