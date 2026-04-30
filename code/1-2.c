@@ -10,5 +10,5 @@ int main() {
     printf("%zu %zu\n", sizeof(s2), strlen(s2));
     printf("%zu %zu\n", sizeof(s3), strlen(s3));
 
-    reuturn 0;
+    return 0;
 }
