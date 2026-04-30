@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 void my_strcat(char *dst, const char *src) {
-    while (*dst != '\0') dst++;
-
+  char *p = dst;
+    while (*p != '\0') p++;
     while (*src != '\0') {
-        *dst = *src;
-        dst++;
-        src++;
+        *p = *src;
+        p++; src++;
     }
-    *dst = '\0';
+    *p = '\0'; 
+    return dst;
 }
 
 int main() {
