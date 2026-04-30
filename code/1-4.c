@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int my_strcmp(const char *a, const char *b) {
-    while (*a != '\0' && (*a == *b)) {
+   while (*a && (*a == *b)) {
         a++; b++;
     }
     return *(unsigned char *)a - *(unsigned char *)b;
